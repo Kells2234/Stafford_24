@@ -2,104 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
-
+    <title>Landing Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        body {
-            background-color: black;
+        body, html {
+            height: 100%;
             margin: 0;
             padding: 0;
-            color: black;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
         }
 
-        
         .header {
             display: flex;
-            align-items: center;
             justify-content: space-between;
-            padding: 10px;
-            background-color: black;
+            align-items: center;
+            padding: 20px;
+            background-color: #343a40;
         }
 
-        /* Logo styling */
         .logo {
-            width: 200px;
-            height: 200px;
+            width: 100px;
+            height: auto;
+        }
+
+        .menu {
+            display: flex;
+            gap: 10px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
         }
 
         .content {
-            padding: 20px;
-            color: gold; /* Set text color to gold in content section */
+            padding: 40px;
+            text-align: center;
+            background: url('background.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
         }
 
-        /* Heading styles within content */
         .content h1 {
-            font-size: 2em; /* Larger font for headings */
+            font-size: 48px;
+            margin-bottom: 20px;
         }
 
-        /* Paragraph styles within content */
         .content p {
-            font-size: 1.2em;
-            line-height: 1.5;
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
-
-            .button {
-                padding: 15px 30px;
-                font-size: 16px;
-                color: goldenrod;
-                background-color: black;
-                border: 2px solid goldenrod; /* Added gold border */
-                border-radius: 5px;
-                cursor: pointer;
-                text-decoration: none;
-                transition: background-color 0.3s;
-            }
-    
-            .button:hover {
-                background-color: black; 
     </style>
 </head>
 <body>
-    
     <div class="header">
         <div>
-            
             <img src="S24 Logo.png" alt="Logo" class="logo">
         </div>
         <div class="menu">
-            
-            
-            
-            
-            <button onclick="window.location.href = 'index2.html';" class="button">ORDER ONLINE</button>
-            
-            <button onclick="window.location.href = 'index2.html';" class="button">CATERING</button>
-            
-            <button onclick="window.location.href = 'index2.html';" class="button">SHIP NATIONWIDE</button>            
-            
-            <button onclick="window.location.href = 'index2.html';" class="button">VIEW CART</button>
-            
-            <button onclick="window.location.href = 'index2.html';" class="button">S24 IRACING TEAM</button>
-            
-            <button onclick="window.location.href = 'index2.html';" class="button">CONTACT US</button>
-            
-            <button onclick="window.location.href = 'index2.html';" class="button">ABOUT US</button>
+            <button onclick="window.location.href='ORDERONLINE.html';" class="button">ORDER ONLINE</button>
+            <button onclick="window.location.href='CATERING.html';" class="button">CATERING</button>
+            <button onclick="window.location.href='SHIPNATIONWIDE.html';" class="button">SHIP NATIONWIDE</button>
+            <button onclick="window.location.href='S24IRACINGTEAM.html';" class="button">S24 IRACING TEAM</button>
+            <button onclick="window.location.href='CONTACTUS.html';" class="button">CONTACT US</button>
+            <button onclick="window.location.href='ABOUTUS.html';" class="button">ABOUT US</button>
         </div>
     </div>
 
-    
     <div class="content">
-        
-        <h1>Welcome to Stafford's 24.</h1>
+        <h1>Welcome to Stafford's 24</h1>
         <p>Our smoked food is the next step in a LEGACY of SMOKE.
             We only get the amount of meat to fill Orders. For this reason,
             orders for the upcoming weekend will need to be placed by Tuesday of that week by 8pm.
-            Any orders received after 8pm will be ready by the following weekend.</p>
-            Payment for your order is required at time the order is placed.
-
-            
+            Any orders received after 8pm will be ready by the following weekend.
+            Payment for your order is required at the time the order is placed.</p>
     </div>
 </body>
 </html>
