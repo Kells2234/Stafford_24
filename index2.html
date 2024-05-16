@@ -20,29 +20,13 @@
             align-items: center;
             justify-content: space-between;
             padding: 10px;
-            background-color: #333;
+            background-color: black;
         }
 
         /* Logo styling */
         .logo {
-            width: 100px;
-            height: 100px;
-        }
-
-        /* Menu styling */
-        .menu {
-            display: flex;
-        }
-
-        .menu a {
-            text-decoration: none;
-            color: white;
-            padding: 10px 15px;
-            transition: background-color 0.3s;
-        }
-
-        .menu a:hover {
-            background-color: #555;
+            width: 200px;
+            height: 200px;
         }
 
         .content {
@@ -59,6 +43,22 @@
         .content p {
             font-size: 1.2em;
             line-height: 1.5;
+        }
+
+            .button {
+                padding: 15px 30px;
+                font-size: 16px;
+                color: goldenrod;
+                background-color: black;
+                border: 2px solid goldenrod; /* Added gold border */
+                border-radius: 5px;
+                cursor: pointer;
+                text-decoration: none;
+                transition: background-color 0.3s;
+            }
+    
+            .button:hover {
+                background-color: black; 
     </style>
 </head>
 <body>
@@ -70,12 +70,23 @@
         </div>
         <div class="menu">
             
-            <a href="#Order Process">Order Process</a>
-            <a href="#Menu">Menu</a>
-            <a href="#Cart">Cart</a>
-            <a href="#S24 Iracing Team">S24 Iracing Team</a>
-            <a href="#contact">Contact</a>
-            <a href="#About Us">About Us</a>
+            
+            
+            <button onclick="window.location.href = 'index2.html';" class="button">MENU</button>
+            
+            <button onclick="window.location.href = 'index2.html';" class="button">ORDER ONLINE</button>
+            
+            <button onclick="window.location.href = 'index2.html';" class="button">CATERING</button>
+            
+            <button onclick="window.location.href = 'index2.html';" class="button">SHIP NATIONWIDE</button>            
+            
+            <button onclick="window.location.href = 'index2.html';" class="button">VIEW CART</button>
+            
+            <button onclick="window.location.href = 'index2.html';" class="button">S24 IRACING TEAM</button>
+            
+            <button onclick="window.location.href = 'index2.html';" class="button">CONTACT US</button>
+            
+            <button onclick="window.location.href = 'index2.html';" class="button">ABOUT US</button>
         </div>
     </div>
 
@@ -83,10 +94,13 @@
     <div class="content">
         
         <h1>Welcome to Stafford's 24.</h1>
-        <p>Our smoked food is the next step in a LEGACY of SMOKE.<br>
-            Just a heads up. We only get enough meat needed to fill Orders. For this reason,<br>
-            Orders for the upcoming weekend will need to be placed by Tuesday of that week by 8pm.<br>
+        <p>Our smoked food is the next step in a LEGACY of SMOKE.
+            We only get the amount of meat to fill Orders. For this reason,
+            orders for the upcoming weekend will need to be placed by Tuesday of that week by 8pm.
             Any orders received after 8pm will be ready by the following weekend.</p>
+            Payment for your order is required at time the order is placed.
+
+            
     </div>
 </body>
 </html>
