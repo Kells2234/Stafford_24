@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            background-color: black;
             margin: 0;
             padding: 20px;
         }
@@ -14,7 +15,7 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: white;
+            background-color: goldenrod;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -49,30 +50,111 @@
             border-radius: 4px;
             margin-right: 10px;
         }
-        .zelle {
-            background-color: #5f259f;
+        .button {
+            padding: 15px 20px;
+            font-size: 16px;
+            color: goldenrod;
+            background-color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
         }
-        .cashapp {
-            background-color: #00c244;
-        }
-    </style>
+        </style>
+            .styled-buttons {
+                background-color: black;
+                color: white;
+                padding: 10px;
+                border-radius: 5px;
+            }
+        </style>
+        <title>Styled Buttons</title>
+        <style>
+            .button:hover {
+                background-color: black;
+            }
+            .zelle {
+                background-color: #5f259f;
+            }
+            .cashapp {
+                background-color: #00c244;
+            }
+        </style>
 </head>
 <body>
     <div class="container">
-        <h1>Products</h1>
+        <h1>Menu</h1>
+        <h2>Smoked Meats</h2>
+        <h3>Beef</h3>
+        <h3>Brisket</h3>
         <div class="product" data-name="Product 1" data-price="10">
-            <span>Product 1 - $10</span>
-            <input type="number" value="0" min="0">
+            <span>Smoked Brisket Flat - $10</span>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" value="0" min="0">
         </div>
         <div class="product" data-name="Product 2" data-price="15">
-            <span>Product 2 - $15</span>
+            <span>Brisket Point - $15</span>
             <input type="number" value="0" min="0">
         </div>
         <div class="product" data-name="Product 3" data-price="20">
-            <span>Product 3 - $20</span>
+            <span>Whole Brisket - $20</span>
             <input type="number" value="0" min="0">
         </div>
-
+        <h3>Turkey</h3>
+        <div class="product" data-name="Product 1" data-price="10">
+            <span>Smoked Turkey Leg - $10</span>
+            <input type="number" value="0" min="0">
+        </div>
+        <div class="product" data-name="Product 2" data-price="15">
+            <span>Smoked Turkey Wing - $15</span>
+            <input type="number" value="0" min="0">
+        </div>
+        <div class="product" data-name="Product 3" data-price="20">
+            <span>Smoked Turkey Breast - $20</span>
+            <input type="number" value="0" min="0">
+        </div>
+        <div class="product" data-name="Product 1" data-price="10">
+            <span>Smoked Whole Turkey - $10</span>
+            <input type="number" value="0" min="0">
+        </div>
+        <h3>Chicken</h3>
+        <div class="product" data-name="Product 2" data-price="15">
+            <span>Smoked Chicken Wings, 5, 7, 10 - $15</span>
+            <input type="number" value="0" min="0">
+        </div>
+        <div class="product" data-name="Product 3" data-price="20">
+            <span>Smoked Chicken, Half, Whole - $20</span>
+            <input type="number" value="0" min="0">
+        </div>
+        <h2>Pork</h2>
+        <div class="product" data-name="Product 3" data-price="20">
+            <span>Smoked Pork Shoulder (Pulled) - $20</span>
+            <input type="number" value="0" min="0">
+        </div>
+        <div class="product" data-name="Product 1" data-price="10">
+            <span>Smoked SpareRibs, Half Slab, Whole Ribs - $10</span>
+            <input type="number" value="0" min="0">
+        </div>
+        <div class="product" data-name="Product 2" data-price="15">
+            <span>Smoked Pork Belly (Sliced for Bacon) - $15</span>
+            <input type="number" value="0" min="0">
+        </div>
+        <h2>Seafood</h2>
+        <h3>Salmon</h3>
+        <div class="product" data-name="Product 1" data-price="10">
+            <span>Smoked Salmon, Half, Whole  - $10</span>
+            <input type="number" value="0" min="0">
+        </div>
+        
+        <div class="product" data-name="Product 2" data-price="15">
+            <span>Smoked Crablegs  - $15</span>
+            <input type="number" value="0" min="0">
+        </div>
+        <div class="product" data-name="Product 3" data-price="20">
+            <span>Smoked Lobster Tails - $20</span>
+            <input type="number" value="0" min="0">
+        </div>
         <h2>Cart</h2>
         <div class="cart">
             <!-- Cart items will be added here -->
@@ -84,6 +166,9 @@
         <div class="checkout-buttons">
             <a href="#" class="zelle">Pay with Zelle</a>
             <a href="#" class="cashapp">Pay with Cash App</a>
+        </div>
+        <div 
+            <button onclick="window.location.href = 'index2.html';" class="button">Meal Options</button>
         </div>
     </div>
 
