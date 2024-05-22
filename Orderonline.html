@@ -1,23 +1,55 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple E-commerce Cart</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: black;
+            background-image: url'Brisket.jpg';
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             margin: 0;
             padding: 20px;
+            color:black
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: goldenrod;
+            background-color: rgba(218, 165, 32, 0.9); /* Goldenrod with transparency */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .banner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(51, 51, 51, 0.9); /* Dark background with transparency */
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .banner img {
+            height: 100px;
+        }
+        .banner nav {
+            display: flex;
+            gap: 10px;
+        }
+        .banner nav a {
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .banner nav a:hover {
+            background-color: goldenrod;
+            color: black;
         }
         .product {
             display: flex;
@@ -61,28 +93,29 @@
             text-decoration: none;
             transition: background-color 0.3s;
         }
-        </style>
-            .styled-buttons {
-                background-color: black;
-                color: white;
-                padding: 10px;
-                border-radius: 5px;
-            }
-        </style>
-        <title>Styled Buttons</title>
-        <style>
-            .button:hover {
-                background-color: black;
-            }
-            .zelle {
-                background-color: #5f259f;
-            }
-            .cashapp {
-                background-color: #00c244;
-            }
-        </style>
+        .button:hover {
+            background-color: goldenrod;
+            color: black;
+        }
+        .zelle {
+            background-color: #5f259f;
+        }
+        .cashapp {
+            background-color: #00c244;
+        }
+    </style>
 </head>
 <body>
+    <div class="banner">
+        <img src="S24 Logo.png" alt="Logo">
+        <nav>
+            <a href="catering.html">Catering</a>
+            <a href="ship.html">Ship Nationwide</a>
+            <a href="iracing.html">S24 iRacing Team</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    </div>
     <div class="container">
         <h1>Menu</h1>
         <h2>Smoked Meats</h2>
@@ -167,8 +200,8 @@
             <a href="#" class="zelle">Pay with Zelle</a>
             <a href="#" class="cashapp">Pay with Cash App</a>
         </div>
-        <div 
-            <button onclick="window.location.href = 'index2.html';" class="button">Meal Options</button>
+        <div>
+            <button onclick="window.location.href = 'index2.html';" class="button">Side Options</button>
         </div>
     </div>
 
@@ -191,17 +224,16 @@
                 const price = parseFloat(product.getAttribute('data-price'));
 
                 if (quantity > 0) {
-                    const itemTotal = quantity * price;
+                    const itemTotal = price * quantity;
                     total += itemTotal;
-
                     const cartItem = document.createElement('div');
-                    cartItem.className = 'cart-item';
-                    cartItem.innerHTML = `${name} - $${price} x ${quantity} = $${itemTotal.toFixed(2)}`;
+                    cartItem.classList.add('cart-item');
+                    cartItem.textContent = `${name} x ${quantity} - $${itemTotal}`;
                     cart.appendChild(cartItem);
                 }
             });
 
-            cartTotalElement.innerText = total.toFixed(2);
+            cartTotalElement.textContent = total.toFixed(2);
         }
     </script>
 </body>
